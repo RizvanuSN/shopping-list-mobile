@@ -124,8 +124,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text('Nama: $_name'),
-                                  Text('Harga: $_price'),
-                                  Text('Deskripsi: $_description'),
+                                  // TODO: Munculkan value-value lainnya
                                 ],
                               ),
                             ),
@@ -140,8 +139,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
                           );
                         },
                       );
+                      _formKey.currentState!.reset();
                     }
-                    _formKey.currentState!.reset();
                   },
                   child: const Text(
                     "Save",
